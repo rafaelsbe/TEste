@@ -1,6 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .show {
@@ -14,10 +19,9 @@
     pointer-events: none;
 }
 
+/* Inputs nativos — o hover de scale foi removido pois
+   atrapalha os inputs dentro dos formulários.
+   Cada página controla seu próprio estilo de input. */
 input {
-    transition: all 0.3s ease;
-}
-
-input:hover {
-    transform: scale(1.05);
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
